@@ -1,0 +1,51 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <select  id="team">
+                    <option value="0">{{ constants.TENNIS_MAN_TEAM }}</option>
+                    <option value="1">{{ constants.TENNIS_WOMAN_TEAM }}</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="man_team">
+                <h2>{{ constants.TENNIS_MAN_TEAM }}</h2>
+                <div class="">
+                    <table id="man_d2">
+                        <tr>
+                            <th data-field="name">Nome</th>
+                            <th data-field="ranking">Classifica</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="woman_team" >
+                <h2>{{ constants.TENNIS_WOMAN_TEAM }}</h2>
+            </div>
+        </div>
+    </div>
+    {% block javascripts %}
+        <script>
+            $( document ).ready(function() {
+                $('#team').select2();
+                $('.woman_team').hide();
+                var table_d2 = $('#man_d2');
+                table_d2.bootstrapTable({data: {{ man_team }} })
+            });
+
+            $('#team').on('change',function (){
+                var value = $('#team').val();
+                if(value === '0'){
+                    $('.man_team').show();
+                    $('.woman_team').hide();
+                }else if ( value === '1'){
+                    $('.man_team').hide();
+                    $('.woman_team').show();
+                }
+            })
+        </script>
+    {% endblock %}
+{% endblock %}

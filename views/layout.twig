@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/jquery.lightbox-0.5.css">
+    <link rel="stylesheet" href="/stylesheets/nivo-slider.css">
+    <link rel="stylesheet" href="/scripts/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/scripts/select2/dist/css/select2.css">
+    <link rel="stylesheet" href="/scripts/bootstrap-table/dist/bootstrap-table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-social.css">
+    <script src="/javascripts/constants.js"></script>
+    <script src="/scripts/jquery/dist/jquery.min.js"></script>
+    <script src="/scripts/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/scripts/select2/dist/js/select2.js"></script>
+    <script src="/scripts/bootstrap-table/dist/bootstrap-table.js"></script>
+    <script src="/scripts/bootstrap/js/dist/carousel.js"></script>
+  </head>
+  <body>
+  <header>
+  <nav class="navbar navbar-expand-md   navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center order-2" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-lg-1">
+          <li>
+            <a> <img src="/images/logo.png" width="60" height="60" alt=""></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav m-lg-1" >
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tennis">{{ constants.TENNIS_NAV }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gym">{{ constants.GYM_NAV }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="football">{{ constants.FOOTBALL_NAV }}</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ constants.SPORTIVE_CENTER_NAV }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="location">{{ constants.LOCATIONS_NAV }}</a>
+              <a class="dropdown-item" href="contact">{{ constants.CONTACTS_NAV }}</a>
+              <a class="dropdown-item" href="history">{{ constants.HISTORY_NAV }}</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Just an image -->
+  </nav>
+  </header>
+    {% block body %}{% endblock %}
+  </body>
+  <!-- Footer -->
+  <footer class="bg-primary text-center text-lg-start">
+    <div class="text-center p-3">
+      {{ constants.TITLE }} - {{ constants.TELEPHONE }} -
+      <a href="mailto:info@centrosportivoanchetta.com" style="text-decoration:none;color:#FFF;">{{
+          constants.EMAIL
+        }}</a>
+    </div>
+
+  </footer>
+</html>
