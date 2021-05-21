@@ -31,5 +31,6 @@ module.exports = {
     RESERVATION_TENNIS: 'CAMPI DA TENNIS',
     RESERVATION_FOOTBALL: 'CAMPI DA CALCIO & CALCETTO',
     RESERVATIONS_TEXT: 'Per prenotare i nostri campi : ',
+    SUMMER_CAMP_TEXT: 'CENTRI ESTIVI: ',
 
 }
