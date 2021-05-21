@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/tennis', function(req, res, next) {
-  res.render('tennis', { title: constants.TITLE,constants: constants });
+  res.render('tennis', { constants: constants });
 });
 
 router.get('/tennis_team', function(req, res, next) {

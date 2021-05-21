@@ -1,7 +1,7 @@
 module.exports = {
     TITLE : 'Centro Sportivo Anchetta',
-    TITLE_TEXT_1: 'Tennis , Calcio , Calcetto , Ginnastica , Pallavolo e molto altro.',
-    TITLE_TEXT_2: 'La struttura offre 4 campi da tennis in terra rossa , un campo da calcetto e uno da calciotto , una palestra adibita alla ginnastica e alla pallavvolo.',
+    TITLE_TEXT_1: 'Tennis , Calcio , Ginnastica , Pallavolo e molto altro.',
+    TITLE_TEXT_2: 'La struttura offre: <br>- 4 campi da tennis in terra rossa <br>- Un campo da calcetto e uno da calciotto <br>- Una palestra adibita alla ginnastica e alla pallavvolo.',
     TITLE_TEXT_3: "Il circolo inoltre offre un'area ristoro.",
     TENNIS_NAV: 'Tennis',
     GYM_NAV: 'Ginnastica',
@@ -12,7 +12,11 @@ module.exports = {
     SPORTIVE_CENTER_NAV: 'Il Circolo',
     TELEPHONE: '055/6593122',
     EMAIL: 'info@centrosportivoanchetta.com',
-    ADDRESS: '',
+    ADDRESS: 'Via Aretina, 42, 50014 Fiesole FI',
+    TENNIS_TITLE: 'TENNIS',
+    TENNIS_TITLE_TEXT_1: 'Vieni a giocare con noi!',
+    TENNIS_STAFF: 'IL NOSTRO STAFF',
+    TENNIS_ADULT_TRAINING: 'CORSI ADULTI',
     TENNIS_TEAM: 'LE NOSTRE SQUADRE',
     TENNIS_MAN_TEAM: 'Squadre Maschili',
     TENNIS_WOMAN_TEAM: 'Squadre Femminili',
@@ -27,6 +31,5 @@ module.exports = {
     RESERVATION_TENNIS: 'CAMPI DA TENNIS',
     RESERVATION_FOOTBALL: 'CAMPI DA CALCIO & CALCETTO',
     RESERVATIONS_TEXT: 'Per prenotare i nostri campi : ',
-
 
 }
